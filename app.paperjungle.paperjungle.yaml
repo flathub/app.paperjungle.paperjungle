@@ -27,8 +27,8 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/paperjungle/build.git
-        tag: 1.6.6
-        commit: 228a768152597776378632c6e794273d52398606
+        tag: 1.6.8
+        commit: d84a1d7da06958713285f696cca469600a501940
         dest: build
         x-checker-data:
           type: "git"
