@@ -21,14 +21,15 @@ modules:
       - ln -s /app/paperjungle/paperjungle $FLATPAK_DEST/bin/paperjungle
       - chmod +x /app/paperjungle/lib/crashpad_handler
       - install -Dm644 build/linux/flatpak/app.paperjungle.paperjungle.desktop /app/share/applications/app.paperjungle.paperjungle.desktop
-      - install -Dm644 build/linux/flatpak/app.paperjungle.paperjungle.metainfo.xml /app/share/metainfo/app.paperjungle.paperjungle.metainfo.xml
+      - install -Dm644 build/linux/flatpak/app.paperjungle.paperjungle.metainfo.xml
+        /app/share/metainfo/app.paperjungle.paperjungle.metainfo.xml
       - install -Dm644 build/linux/flatpak/logo.svg /app/share/icons/hicolor/scalable/apps/app.paperjungle.paperjungle.svg
       - rm -r build
     sources:
       - type: git
         url: https://gitlab.com/paperjungle/build.git
-        tag: 1.6.8
-        commit: d84a1d7da06958713285f696cca469600a501940
+        tag: 1.6.10
+        commit: d0c9a099783276fa763b6a95ddf1a34911009d56
         dest: build
         x-checker-data:
-          type: "git"
+          type: git
